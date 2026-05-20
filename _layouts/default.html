@@ -8,8 +8,6 @@
   {% elsif site.description %}<meta name="description" content="{{ site.description | strip_newlines }}">{% endif %}
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
   <link rel="stylesheet" href="/assets/css/style.css">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.url }}/feed.xml">
-  {% feed_meta %}
   {% seo title=false %}
 </head>
 <body>
@@ -18,8 +16,6 @@
   <div class="container">
     <a href="/" class="site-title">{{ site.title }}</a>
     <nav>
-      <a href="/writing/">Writing</a>
-      <a href="/feed.xml">RSS</a>
       <a href="https://archisgore.substack.com">Substack</a>
       <a href="https://medium.com/@archisgore">Medium</a>
       <a href="https://github.com/archisgore">GitHub</a>
@@ -36,8 +32,6 @@
   <div class="container">
     <p>
       <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
-      &nbsp;·&nbsp;
-      <a href="/feed.xml">RSS</a>
       &nbsp;·&nbsp;
       <a href="https://github.com/archisgore/archisgore.github.io">source</a>
     </p>

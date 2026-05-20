@@ -17,19 +17,15 @@ description: Engineer, founder, security researcher. Builder of polymorphic Linu
     re-instantiated at every layer.
   </p>
   <p class="hero-cta">
-    <a href="/writing/">Read what I'm writing</a>
-    &nbsp;·&nbsp;
-    <a href="https://github.com/archisgore">Code on GitHub</a>
-    &nbsp;·&nbsp;
-    <a href="https://www.linkedin.com/in/archisgore/">Connect on LinkedIn</a>
-  </p>
-  <p class="hero-cta">
-    Also at
+    Read me on
     <a href="https://archisgore.substack.com">Substack</a>
     &nbsp;·&nbsp;
     <a href="https://medium.com/@archisgore">Medium</a>
+  </p>
+  <p class="hero-cta">
+    <a href="https://github.com/archisgore">Code on GitHub</a>
     &nbsp;·&nbsp;
-    <a href="/feed.xml">RSS</a>
+    <a href="https://www.linkedin.com/in/archisgore/">Connect on LinkedIn</a>
   </p>
 </section>
 
@@ -134,21 +130,6 @@ description: Engineer, founder, security researcher. Builder of polymorphic Linu
   <p class="more-link">
     <a href="https://github.com/archisgore?tab=repositories">More on GitHub →</a>
   </p>
-</section>
-
-<section class="container latest">
-  <h2 class="section-h">Latest writing</h2>
-  <ol class="post-list compact">
-    {% for post in site.posts limit:6 %}
-      <li>
-        <time datetime="{{ post.date | date_to_xmlschema }}">
-          {{ post.date | date: "%b %-d, %Y" }}
-        </time>
-        <a href="{{ post.url }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ol>
-  <p class="more-link"><a href="/writing/">All writing →</a></p>
 </section>
 
 <section class="container connect">
