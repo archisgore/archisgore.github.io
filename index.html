@@ -1,0 +1,155 @@
+---
+layout: default
+title: ""
+description: Engineer, founder, security researcher. Builder of polymorphic Linux, Encrypted Execution, and other diversity-as-defense work.
+---
+
+<section class="hero container">
+  <h1 class="hero-name">Archis Gore</h1>
+  <p class="hero-tagline">
+    Engineer, founder, security researcher.
+  </p>
+  <p class="hero-blurb">
+    I work on <em>diversity as a defense</em> — the idea that the best
+    way to defeat an attacker writing one exploit is to make every target
+    different. The work spans the stack: lexer tokens, bytecode, calling
+    conventions, kernel ABI, custom ISA. The same closure-based thesis,
+    re-instantiated at every layer.
+  </p>
+  <p class="hero-cta">
+    <a href="/writing/">Read what I'm writing</a>
+    &nbsp;·&nbsp;
+    <a href="https://github.com/archisgore">Code on GitHub</a>
+    &nbsp;·&nbsp;
+    <a href="https://www.linkedin.com/in/archisgore/">Connect on LinkedIn</a>
+  </p>
+</section>
+
+<section class="container current-work">
+  <h2 class="section-h">Current</h2>
+  <div class="card-grid">
+
+    <a class="card" href="https://tone.wine/">
+      <h3 class="card-title">tone.wine <span class="card-sub">/ WineTone</span></h3>
+      <p class="card-body">
+        A wine recommender that calibrates to <em>your</em> vocabulary.
+        Demonstrates a thesis about recommendation systems: words have
+        context, but users have personal context on how they use words.
+      </p>
+      <p class="card-meta">Live · 164K wines · Apache-2.0</p>
+    </a>
+
+    <a class="card" href="https://github.com/encrypted-execution/encrypted-linux">
+      <h3 class="card-title">encrypted-linux</h3>
+      <p class="card-body">
+        A Linux distribution where every build is its own dialect.
+        Scrambling-GCC produces a unique binary ABI per seed, so the
+        same exploit can't move between machines.
+      </p>
+      <p class="card-meta">In progress · GCC + dpkg + qemu</p>
+    </a>
+
+  </div>
+</section>
+
+<section class="container foundational">
+  <h2 class="section-h">Foundational work</h2>
+  <div class="card-grid">
+
+    <a class="card" href="https://www.encrypted-execution.com">
+      <h3 class="card-title">Encrypted Execution</h3>
+      <p class="card-body">
+        Whitepaper that frames closure-based diversity as a defense
+        primitive. The patent
+        (<a href="https://patents.google.com/patent/US10733303">USPTO 10,733,303</a>)
+        is pledged to the public domain.
+      </p>
+      <p class="card-meta">2018–present · encrypted-execution.com</p>
+    </a>
+
+    <a class="card" href="https://medium.com/polyverse">
+      <h3 class="card-title">Polyverse · Polymorphic Linux</h3>
+      <p class="card-body">
+        Founding CTO. Moving-target-defense product that recompiled
+        every Linux binary with a different gadget layout, breaking
+        exploit reusability industry-wide.
+      </p>
+      <p class="card-meta">Acquired · 2015–2021</p>
+    </a>
+
+    <a class="card" href="https://github.com/archisgore/polyscripted-wordpress">
+      <h3 class="card-title">Polyscripting · PHP / WordPress</h3>
+      <p class="card-body">
+        Reference implementation of the polyscripting idea at the
+        interpreter level: per-build lexer dialects so an attacker's
+        injected PHP doesn't even tokenise.
+      </p>
+      <p class="card-meta">Reference impl · Apache-2.0</p>
+    </a>
+
+  </div>
+</section>
+
+<section class="container open-source">
+  <h2 class="section-h">Open source</h2>
+  <ul class="repo-list">
+    <li>
+      <a href="https://github.com/polyverse/zerotect"><strong>zerotect</strong></a>
+      — attack detector that uses polymorphism to surface crash-induced
+      side channels from polymorphic builds.
+    </li>
+    <li>
+      <a href="https://github.com/archisgore/rmesg"><strong>rmesg</strong></a>
+      — <code>dmesg</code> in Rust, with a streaming/library API for tools
+      that want kernel log data without shelling out.
+    </li>
+    <li>
+      <a href="https://github.com/archisgore/EnVisen"><strong>EnVisen</strong></a>
+      — ROP gadget finder and analyser written in pure JavaScript, so it
+      runs in a browser tab.
+    </li>
+    <li>
+      <a href="https://github.com/archisgore/zerosum"><strong>ZeroSum</strong></a>
+      — smart-contract language that preserves value as a type-system
+      property; transfers compile to balanced bookkeeping.
+    </li>
+    <li>
+      <a href="https://github.com/archisgore/landslide"><strong>landslide</strong></a>
+      — Rust-based custom VM for the Avalanche blockchain.
+    </li>
+    <li>
+      <a href="https://github.com/archisgore/divepredictor"><strong>divepredictor</strong></a>
+      — Erlang system that models tidal/current windows for scuba sites.
+      One of several diving-related side projects.
+    </li>
+  </ul>
+  <p class="more-link">
+    <a href="https://github.com/archisgore?tab=repositories">More on GitHub →</a>
+  </p>
+</section>
+
+<section class="container latest">
+  <h2 class="section-h">Latest writing</h2>
+  <ol class="post-list compact">
+    {% for post in site.posts limit:6 %}
+      <li>
+        <time datetime="{{ post.date | date_to_xmlschema }}">
+          {{ post.date | date: "%b %-d, %Y" }}
+        </time>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ol>
+  <p class="more-link"><a href="/writing/">All writing →</a></p>
+</section>
+
+<section class="container connect">
+  <h2 class="section-h">Get in touch</h2>
+  <p>
+    Email <a href="mailto:me@archisgore.com">me@archisgore.com</a>,
+    DM on <a href="https://www.linkedin.com/in/archisgore/">LinkedIn</a>,
+    or open an issue on any of the
+    <a href="https://github.com/archisgore?tab=repositories">repos</a>.
+    I respond best to specific, well-formed questions.
+  </p>
+</section>

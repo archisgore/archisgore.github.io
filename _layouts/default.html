@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} — {% endif %}{{ site.title }}</title>
+  {% if page.description %}<meta name="description" content="{{ page.description | strip_html | strip_newlines | truncate: 200 }}">
+  {% elsif site.description %}<meta name="description" content="{{ site.description | strip_newlines }}">{% endif %}
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.url }}/feed.xml">
+  {% feed_meta %}
+  {% seo title=false %}
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="site-title">{{ site.title }}</a>
+    <nav>
+      <a href="/writing/">Writing</a>
+      <a href="/feed.xml">RSS</a>
+      <a href="https://github.com/archisgore">GitHub</a>
+      <a href="https://www.linkedin.com/in/archisgore/">LinkedIn</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  {{ content }}
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>
+      <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
+      &nbsp;·&nbsp;
+      <a href="/feed.xml">RSS</a>
+      &nbsp;·&nbsp;
+      <a href="https://github.com/archisgore/archisgore.github.io">source</a>
+    </p>
+    <p class="copyright">© {{ "now" | date: "%Y" }} {{ site.author.name }}.</p>
+  </div>
+</footer>
+
+</body>
+</html>

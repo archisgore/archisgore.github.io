@@ -1,0 +1,36 @@
+title: Archis Gore
+description: >-
+  Notes on computer security, distributed systems, polymorphic execution,
+  diving, AI, and whatever else crosses my desk. Migrated from Medium.
+author:
+  name: Archis Gore
+  email: me@archisgore.com
+url: "https://archisgore.com"
+
+# RSS — jekyll-feed publishes /feed.xml automatically with every plugin
+# below in the `plugins:` block.
+feed:
+  posts_limit: 200      # default 10 — make sure RSS includes everything
+
+# Permalink shape: /YYYY/MM/slug/ keeps it close to Medium's URL style
+# without being verbatim, so old links still navigate cleanly through
+# the migration.
+permalink: /:year/:month/:title/
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  hard_wrap: false
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor/
+  - .gitignore
