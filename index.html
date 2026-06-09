@@ -58,6 +58,54 @@ description: Engineer, founder, security researcher. Builder of polymorphic Linu
   </div>
 </section>
 
+<section class="container hosted-tools">
+  <h2 class="section-h">Try it in your browser</h2>
+  <p class="hero-blurb" style="margin-top:-0.5rem;">A handful of single-page tools I built for myself, hosted free. No signup, no install — open and go.</p>
+  <div class="card-grid">
+
+    <a class="card" href="https://deco-planner.archisgore.com/">
+      <h3 class="card-title">Deco Planner</h3>
+      <p class="card-body">
+        Browser-side scuba decompression planning with Buhlmann ZHL +
+        Gradient Factors or VPM-B. Multi-gas, multi-level, metric or
+        imperial. The deco math runs entirely client-side.
+      </p>
+      <p class="card-meta">Diving · open source</p>
+    </a>
+
+    <a class="card" href="https://divepredictor.archisgore.com/">
+      <h3 class="card-title">DivePredictor</h3>
+      <p class="card-body">
+        Sweeps a date range and surfaces slack-current windows for six
+        Pacific Northwest dive sites. Live NOAA tide and current
+        predictions, per-site rules.
+      </p>
+      <p class="card-meta">Diving · open source</p>
+    </a>
+
+    <a class="card" href="https://map.archisgore.com/">
+      <h3 class="card-title">Wreck &amp; Site Map</h3>
+      <p class="card-body">
+        Public, URL-shareable map of dive sites and wrecks. Filter,
+        search, jump straight to driving directions. Markers are a
+        separate open data repo — submit a PR to add yours.
+      </p>
+      <p class="card-meta">Diving · public-domain markers</p>
+    </a>
+
+    <a class="card" href="https://envisen.archisgore.com/">
+      <h3 class="card-title">EnVisen</h3>
+      <p class="card-body">
+        ROP/JOP gadget finder for ELF, Mach-O, and PE binaries. Pure
+        JavaScript — parses the binary in a browser tab using Kaitai
+        Struct, disassembles with Capstone.js. Nothing uploaded.
+      </p>
+      <p class="card-meta">Security · open source</p>
+    </a>
+
+  </div>
+</section>
+
 <section class="container foundational">
   <h2 class="section-h">Foundational work</h2>
   <div class="card-grid">
@@ -125,8 +173,9 @@ description: Engineer, founder, security researcher. Builder of polymorphic Linu
     </li>
     <li>
       <a href="https://github.com/archisgore/divepredictor"><strong>divepredictor</strong></a>
-      — Erlang system that models tidal/current windows for scuba sites.
-      One of several diving-related side projects.
+      — Python/FastAPI service that models tidal &amp; current windows
+      for scuba sites, backed by NOAA predictions. Originally written in
+      Erlang as a learn-Erlang project; later ported.
     </li>
   </ul>
   <p class="more-link">
